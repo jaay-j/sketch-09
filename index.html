@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nineth Sketch</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="javascript/p5.min.js"></script>
+
+
+</head>
+
+<body>
+
+    <script src="javascript/sketch-09.js"></script>
+
+    <h1>Sketch 9</h1>
+    <p> What I made with p5 -- Day 9! </p>
+    <br><br>
+    <img src="img/sketch-09.png">
+
+    <div id="container">
+
+    <h3>
+
+        let detailY; <br>
+        function setup() { <br>
+          createCanvas(1000, 1000, WEBGL); <br>
+          background(25, 135, 98); <br>
+          detailY = createSlider(10, 16, 1);<br>
+          detailY.position(1, height * 5);<br>
+          detailY.style('width', '80px');<br>
+        }<br><br>
+        
+        function draw() {<br>
+            push();<br>
+            translate(-303, -663);<br>
+            noFill();<br>
+            stroke(0);<br>
+            strokeWeight(5);<br>
+            rect(32, 303, 55, 760);<br>
+            pop();<br><br>
+        
+            push();<br>
+            rotate(45);<br>
+            rotateY(millis() / 1000);<br>
+            cylinder(400, 65, 6, detailY.value());<br>
+            pop();<br><br>
+        
+            push();<br>
+            translate(180, -708);<br>
+            fill(0, 82, 54);<br>
+            noStroke();<br>
+            rect(32, 303, 55, 760);<br>
+            pop();<br>
+        }<br>
+
+</h3>
+</div>
+
+
+<a href="https://jaay-j.github.io/sketch_main" style="font-size:30px; margin:40%; color: rgb(145, 35, 189);"> BACK TO MENU </a> 
+
+</body>
+</html>
